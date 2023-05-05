@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Conversando en el Aula
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content split-pane="true">
+  <!-- contenido de la parte izquierda -->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-input label="Email" labelPlacement="stacked" placeholder="Email" type="email"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-input label="Contraseña" labelPlacement="stacked" placeholder="Contraseña" type="password"></ion-input>
+        </ion-item>
+
+        <ion-button expand="block">Ingresar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <swiper-container 
+    [modules]="swiperModules"
+    [slidesPerView]="2"
+    [initialSlide]="1"
+    [centeredSlides]="true"    
+    [spaceBetween]="10"    
+    >
+    <swiper-slide>
+      <img src="assets/icon/appChat.png" alt="" width="50%" height="50%">
+    </swiper-slide>
+    <swiper-slide>
+      <img src="assets/icon/appChat.png" alt="" width="50%" height="50%">
+    </swiper-slide>
+    <swiper-slide>
+      <img src="assets/icon/appChat.png" alt="" width="50%" height="50%">
+    </swiper-slide>
+    <swiper-slide>
+      <img src="assets/icon/appChat.png" alt="" width="50%" height="50%">
+    </swiper-slide>
+    <swiper-slide>
+      <img src="assets/icon/appChat.png" alt="" width="50%" height="50%">
+    </swiper-slide>
+  </swiper-container>
+
+</ion-content>

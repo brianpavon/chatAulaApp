@@ -5,6 +5,7 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content split-pane="true">
   <!-- contenido de la parte izquierda -->
   <ion-grid>
@@ -23,28 +24,57 @@
     </ion-row>
   </ion-grid>
 
-  <swiper-container 
+  <ion-grid class="ion-text-center">
+    <ion-badge color="tertiary" class="ion-text-lg-center">Elija un perfil</ion-badge>
+  </ion-grid>
+  
+  <swiper-container class="border-carousel"
     [modules]="swiperModules"
     [slidesPerView]="2"
-    [initialSlide]="1"
+    [initialSlide]="0"
     [centeredSlides]="true"    
     [spaceBetween]="10"    
     >
     <swiper-slide>
-      <img src="assets/icon/appChat.png" alt="" width="50%" height="50%">
+
+      <button class="boton-imagen">
+        <img src="/assets/images/students.png" alt="img-medico" width="50%" height="50%" >
+        <p class="nombre-perfil">Admin</p>
+      </button>
     </swiper-slide>
+
     <swiper-slide>
-      <img src="assets/icon/appChat.png" alt="" width="50%" height="50%">
+      <button class="boton-imagen">
+        <img src="/assets/images/students.png" alt="img-medico" width="50%" height="50%" >
+        <p class="nombre-perfil">Invitado</p>
+      </button>
     </swiper-slide>
+
     <swiper-slide>
-      <img src="assets/icon/appChat.png" alt="" width="50%" height="50%">
+      <button class="boton-imagen">
+        <img src="/assets/images/students.png" alt="img-medico" width="50%" height="50%" >
+        <p class="nombre-perfil">Anónimo</p>
+      </button>
     </swiper-slide>
+
     <swiper-slide>
-      <img src="assets/icon/appChat.png" alt="" width="50%" height="50%">
+      <button class="boton-imagen">
+        <img src="/assets/images/students.png" alt="img-medico" width="50%" height="50%" >
+        <p class="nombre-perfil">Usuario</p>
+      </button>
     </swiper-slide>
+
     <swiper-slide>
-      <img src="assets/icon/appChat.png" alt="" width="50%" height="50%">
+      <button class="boton-imagen">
+        <img src="/assets/images/students.png" alt="img-medico" width="50%" height="50%" >
+        <p class="nombre-perfil">Tester</p>
+      </button>
     </swiper-slide>
+
   </swiper-container>
+
+  <ion-row class="ion-justify-content-center ion-padding">
+    <img src="assets/icon/appChat.png" class="ion-margin" width="50%" height="50%"/>
+  </ion-row>
 
 </ion-content>

@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
+    <ion-title class="ion-text-center">
       Conversando en el Aula
     </ion-title>
   </ion-toolbar>
@@ -19,7 +19,7 @@
           <ion-input label="Contraseña" labelPlacement="stacked" placeholder="Contraseña" type="password"></ion-input>
         </ion-item>
 
-        <ion-button expand="block">Ingresar</ion-button>
+        <ion-button expand="block" color="success">Ingresar</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -30,10 +30,10 @@
   
   <swiper-container class="border-carousel"
     [modules]="swiperModules"
-    [slidesPerView]="2"
+    [slidesPerView]="2.3"
     [initialSlide]="0"
-    [centeredSlides]="true"    
-    [spaceBetween]="10"    
+    [centeredSlides]="true"
+    [pagination]="{clickable:true}"
     >
     <swiper-slide>
 
@@ -74,7 +74,7 @@
   </swiper-container>
 
   <ion-row class="ion-justify-content-center ion-padding">
-    <img src="assets/icon/appChat.png" class="ion-margin" width="50%" height="50%"/>
+    <img src="assets/images/people-talking.png" class="ion-margin" width="50%" height="50%"/>
   </ion-row>
 
 </ion-content>

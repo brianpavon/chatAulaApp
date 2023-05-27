@@ -13,7 +13,7 @@
       <ion-row>
         <ion-col>
           <ion-item>
-            <ion-input label="Email" labelPlacement="stacked" placeholder="Email" type="email" formControlName="email"></ion-input>
+            <ion-input label="Correo electrónico" labelPlacement="stacked" placeholder="Correo" type="email" formControlName="email"></ion-input>
           </ion-item>
           <ion-text *ngIf="formRegistro.controls['email'].errors?.['required'] && formRegistro.controls['email'].touched" color="danger">Debe ingresar un email</ion-text>
           

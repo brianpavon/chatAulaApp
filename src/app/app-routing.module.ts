@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'sala-chat',
+    loadChildren: () => import('./components/sala-chat/sala-chat.module').then( m => m.SalaChatPageModule)
+  },
 ];
 
 @NgModule({

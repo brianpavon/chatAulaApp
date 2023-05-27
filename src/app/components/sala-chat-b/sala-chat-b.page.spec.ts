@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { SalaChatPage } from './sala-chat.page';
+import { SalaChatBPage } from './sala-chat-b.page';
 
-describe('SalaChatPage', () => {
-  let component: SalaChatPage;
-  let fixture: ComponentFixture<SalaChatPage>;
+describe('SalaChatBPage', () => {
+  let component: SalaChatBPage;
+  let fixture: ComponentFixture<SalaChatBPage>;
 
   beforeEach(async(() => {
-    fixture = TestBed.createComponent(SalaChatPage);
+    fixture = TestBed.createComponent(SalaChatBPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SalaChatPageRoutingModule } from './sala-chat-routing.module';
+import { SalaChatAPageRoutingModule } from './sala-chat-a-routing.module';
 
-import { SalaChatPage } from './sala-chat.page';
+import { SalaChatAPage } from './sala-chat-a.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SalaChatPageRoutingModule
+    SalaChatAPageRoutingModule    
   ],
-  declarations: [SalaChatPage]
+  declarations: [SalaChatAPage]
 })
-export class SalaChatPageModule {}
+export class SalaChatAPageModule {}

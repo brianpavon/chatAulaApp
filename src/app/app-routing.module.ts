@@ -20,8 +20,12 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'sala-chat',
-    loadChildren: () => import('./components/sala-chat/sala-chat.module').then( m => m.SalaChatPageModule)
+    path: 'chat-4a',
+    loadChildren: () => import('./components/sala-chat-a/sala-chat-a.module').then( m => m.SalaChatAPageModule)
+  },
+  {
+    path: 'chat-4b',
+    loadChildren: () => import('./components/sala-chat-b/sala-chat-b.module').then( m => m.SalaChatBPageModule)
   },
 ];
 

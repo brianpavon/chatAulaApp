@@ -24,3 +24,9 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+:root{
+    --ion-font-family: 'Acme', sans-serif;
+}

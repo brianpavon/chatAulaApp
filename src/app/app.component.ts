@@ -12,7 +12,7 @@ register();
 })
 export class AppComponent {
   constructor(private router : Router) {
-    //this.initializeApp();
+    this.initializeApp();
   }
 
   initializeApp(){    

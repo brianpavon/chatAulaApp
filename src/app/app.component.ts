@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { register } from 'swiper/element/bundle';
+import {SplashScreen} from '@capacitor/splash-screen';
 
 register();
 
@@ -17,6 +18,10 @@ export class AppComponent {
 
   initializeApp(){    
     this.router.navigateByUrl('splash');
+  }
+
+  ionViewDitEnter(){
+    SplashScreen.hide();
   }
 
 }

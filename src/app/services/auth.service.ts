@@ -17,6 +17,8 @@ export class AuthService {
       showConfirmButton: false,
       timer: 2000,
       timerProgressBar: true,
+      background: '#000000',
+        color: '#FFFFFF',
     })
   }
 

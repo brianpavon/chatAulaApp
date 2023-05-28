@@ -11,9 +11,21 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">sala-chat-a</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <div class="card-content">
+    <div class="msjDelChat h-100" id="contenedorMsj">              
+        <p *ngFor="let msj of arrayMensajes" class="msjChat p-2" [ngClass]="(this.usuarioLogueado.uid == msj.emisor) ? 'propio' : 'otro'">
+            {{ msj.texto }}
+        </p>
+    </div>
+  </div>
+  <form class="card-footer text-muted input-group" (ngSubmit)="enviarMensaje()">        
+    <input type="text" class="form-control" placeholder="Envíe el Mensaje" [(ngModel)]="mensajeNuevo" [ngModelOptions]="{standalone: true}">
+    <div class="input-group-append" (click)="enviarMensaje()">
+        <span class="input-group-text" id="basic-addon2">
+            <img class="imgEnviar" src="/assets/images/send.png" alt="send"> 
+        </span>
+    </div>        
+  </form> 
+
 </ion-content>

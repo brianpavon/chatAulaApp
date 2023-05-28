@@ -27,11 +27,6 @@ export class LoginPage implements OnInit{
   async login(){
     try {
       await this.auth.login(this.formRegistro.value.email,this.formRegistro.value.pass);
-      this.auth.obtenerUsuarioLogueado().subscribe(async e=>{
-        console.log(e);
-        
-      })
-      
       this.formRegistro.reset();
     } catch (error) {
       console.log(error);      

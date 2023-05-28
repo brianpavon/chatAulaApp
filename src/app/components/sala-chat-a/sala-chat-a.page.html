@@ -20,8 +20,8 @@
     <div class="card-body" *ngIf="!cargando">
       <div class="msjDelChat h-100" id="contenedorMsj">          
           <ion-subtitle *ngFor="let msj of arrayMensajes" class="msjChat p-2" [ngClass]="(this.usuarioLogueado.uid == msj.emisor) ? 'propio' : 'otro'">
-            <p style="margin: 0px;" *ngIf="this.usuarioLogueado.uid != msj.emisor">{{ msj.nombre }} {{msj.fecha | date :'dd/MM/YYYY'}}</p>
-            <p style="margin: 0px;" *ngIf="this.usuarioLogueado.uid == msj.emisor">{{msj.fecha | date :'dd/MM/YYYY'}}</p>
+            <p style="margin: 0px;" *ngIf="this.usuarioLogueado.uid != msj.emisor">{{ msj.nombre }} {{msj.fecha | date :'dd/MM/YYYY HH:mm'}}</p>
+            <p style="margin: 0px;" *ngIf="this.usuarioLogueado.uid == msj.emisor">{{msj.fecha | date :'dd/MM/YYYY HH:mm'}}</p>
             {{ msj.texto }}
           </ion-subtitle>
       </div>
